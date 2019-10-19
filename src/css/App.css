@@ -1,0 +1,30 @@
+.allBlock {
+    width: 75%;
+    min-width: 320px;
+    height: 750px;
+    background: white;
+    margin: 10px auto;
+}
+
+.titleBlock {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-bottom: 2px solid coral;
+}
+
+.title {
+    color: coral;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.converterBlock {
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 20px;
+}
+
+
+
