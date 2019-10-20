@@ -8,34 +8,126 @@
     margin: 10px 5%;
 }
 
-.description {
-}
-
 .contentForm {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 320px;
 }
 
 .inputBlock {
-    margin: 0 5px;
+    margin: 0 3px;
     display: inline;
-
-}
-
-.inputAmount{
-    height: 25px;
-    font-size: 20px;
-    text-align: center;
-    width: 140px;
 }
 
 .currencyBlock {
-    margin: 0 5px;
+    margin: 0 3px;
     display: inline;
 }
-.currency {
+
+.inputAmount{
+    width: 150px;
+    padding: 0;
     height: 25px;
-    width: 140px;
     font-size: 20px;
     text-align: center;
 }
+
+.currency {
+    width: 150px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.buttonShow {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: coral;
+    color: white;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    padding: 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+
+    transition: 0.5s;
+    line-height: 50px;
+    letter-spacing: 4px;
+}
+
+.buttonShow:hover {
+    box-shadow: 0 0 10px black, 0 0 30px black;
+    background-color: black;
+    transition-delay: 0.5s;
+}
+
+.buttonLine {
+    position: absolute;
+    display: block;
+}
+
+.buttonLine--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, black);
+
+}
+
+.buttonShow:hover .buttonLine--top{
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.buttonLine--bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, black);
+
+}
+
+.buttonShow:hover .buttonLine--bottom{
+    right:100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.buttonLine--left {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, black);
+
+}
+
+.buttonShow:hover .buttonLine--left{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+.buttonLine--right {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, black);
+
+}
+
+.buttonShow:hover .buttonLine--right{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+
+

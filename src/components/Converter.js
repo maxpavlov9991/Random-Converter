@@ -25,12 +25,19 @@ class Converter extends React.Component {
                     <div className='currencyBlock'>
                         <select className='currency'>
                             <option>Rubles</option>
-                            <option>DOLLARS</option>
-                            <option>EURO</option>
-                            <option>YUAN</option>
+                            <option>Dollars</option>
+                            <option>Euros</option>
+                            <option>Yuan</option>
                         </select>
                     </div>
                 </div>
+                <a href='#' className='buttonShow'>
+                    <span className='buttonLine buttonLine--top'></span>
+                    <span className='buttonLine buttonLine--right'></span>
+                    <span className='buttonLine buttonLine--bottom'></span>
+                    <span className='buttonLine buttonLine--left'></span>
+                    Convert
+                </a>
             </div>
         )
     }
