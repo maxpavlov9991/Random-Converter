@@ -1,7 +1,7 @@
 import React from 'react'
-import '../css/Resault.css'
+import '../css/Result.css'
 
-class Resault extends React.Component {
+class Result extends React.Component {
     constructor(props){
         super(props)
         this.state = {}
@@ -11,10 +11,10 @@ class Resault extends React.Component {
         return Number((value * currencyCoefficient / thingCoefficient).toFixed(10))
     }
 
-    resault = () => {
+    result = () => {
         if (this.props.currentThing != null){
             return (
-            <div className='resaultContainer'>
+            <div className='resultContainer'>
                 <h1 className='value'>&asymp; {this.calculateValue(this.props.currentCurrency.сoefficient,
                     this.props.currentThing.coefficient, this.props.currentValue)}</h1>
                 <h1 className='name'>{this.props.currentThing.name}</h1>
@@ -25,7 +25,7 @@ class Resault extends React.Component {
             )
         } else {
             return (
-            <div className='resaultContainer'>
+            <div className='resultContainer'>
                 <h1> PUSH BUTTON "RANDOM" </h1>
             </div>)
         }
@@ -33,11 +33,11 @@ class Resault extends React.Component {
 
     render(){
         return (
-        <div className='resaultBlock'>
-            {this.resault()}
+        <div className='resultBlock'>
+            {this.result()}
         </div>
         )
     }
 }
 
-export default Resault
+export default Result

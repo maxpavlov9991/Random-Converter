@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/Converter.css'
 import InputForm from './InputForm'
 import NeonButton from './NeonButton'
-import Resault from './Resault'
+import Result from './Result'
 
 class Converter extends React.Component {
     constructor(props){
@@ -41,7 +41,7 @@ class Converter extends React.Component {
                 <NeonButton currentCurrency={this.state.currentCurrency} currentValue={this.state.currentValue}
                 updateCurrentThing = {this.updateCurrentThing}/>
 
-                <Resault currentCurrency={this.state.currentCurrency} currentValue={this.state.currentValue}
+                <Result currentCurrency={this.state.currentCurrency} currentValue={this.state.currentValue}
                 currentThing={this.state.currentThing}/>
 
             </div>
