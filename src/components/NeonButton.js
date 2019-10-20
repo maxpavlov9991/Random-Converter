@@ -10,8 +10,11 @@ class NeonButton extends React.Component {
     }
 
     handleClick(event) {
-        console.log(this.props.currentCurrency.name)
+        event.preventDefault();
+        this.props.updateCurrentThing()
     }
+
+
 
     render(){
         return (
@@ -20,7 +23,7 @@ class NeonButton extends React.Component {
                 <span className='buttonLine buttonLine--right'></span>
                 <span className='buttonLine buttonLine--bottom'></span>
                 <span className='buttonLine buttonLine--left'></span>
-                {this.props.currentCurrency.name}
+                Random!
             </a>
         )
     }
