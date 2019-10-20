@@ -1,0 +1,9 @@
+.resaultBlock {
+    height: 100%;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.resaultContainer {
+    border: 1px solid coral;
+}

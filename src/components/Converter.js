@@ -1,5 +1,8 @@
 import React from 'react'
 import '../css/Converter.css'
+import InputForm from './InputForm'
+import NeonButton from './NeonButton'
+import Resault from './Resault'
 
 class Converter extends React.Component {
     constructor(props){
@@ -9,7 +12,7 @@ class Converter extends React.Component {
 
     render() {
         return (
-            <div className='converterContent'>
+            <div className='converterBlock'>
                 <div className='descriptionBlock'>
                     <span className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -18,27 +21,15 @@ class Converter extends React.Component {
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
                     id est laborum.</span>
                 </div>
-                <div className='contentForm'>
-                    <div className='inputBlock'>
-                        <input className='inputAmount' type='number'></input>
-                    </div>
-                    <div className='currencyBlock'>
-                        <select className='currency'>
-                            <option>Rubles</option>
-                            <option>Dollars</option>
-                            <option>Euros</option>
-                            <option>Yuan</option>
-                        </select>
-                    </div>
-                </div>
-                <a href='#' className='buttonShow'>
-                    <span className='buttonLine buttonLine--top'></span>
-                    <span className='buttonLine buttonLine--right'></span>
-                    <span className='buttonLine buttonLine--bottom'></span>
-                    <span className='buttonLine buttonLine--left'></span>
-                    Convert
-                </a>
+
+                <InputForm />
+
+                <NeonButton />
+
+                <Resault />
+
             </div>
+
         )
     }
 }

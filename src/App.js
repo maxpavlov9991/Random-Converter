@@ -8,9 +8,7 @@ function App() {
 			<div className='titleBlock'>
 				<span className='title'>Random Converter</span>
 			</div>
-			<div className='converterBlock'>
-				<Converter />
-			</div>
+			<Converter />
 		</div>
 	)
 }

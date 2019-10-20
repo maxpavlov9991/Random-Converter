@@ -1,0 +1,29 @@
+
+.inputForm {
+    margin: 20px auto;
+    width: 320px;
+}
+.inputBlock {
+    margin: 0 3px;
+    display: inline;
+}
+
+.currencyBlock {
+    margin: 0 3px;
+    display: inline;
+}
+
+.inputAmount{
+    width: 150px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: text;
+}
+
+.currency {
+    width: 150px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
