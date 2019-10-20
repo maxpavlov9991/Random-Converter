@@ -15,9 +15,9 @@ class Result extends React.Component {
         if (this.props.currentThing != null){
             return (
             <div className='resultContainer'>
-                <h1 className='value'>&asymp; {this.calculateValue(this.props.currentCurrency.сoefficient,
-                    this.props.currentThing.coefficient, this.props.currentValue)}</h1>
-                <h1 className='name'>{this.props.currentThing.name}</h1>
+                <h2 className='value'>&asymp; {this.calculateValue(this.props.currentCurrency.сoefficient,
+                    this.props.currentThing.coefficient, this.props.currentValue)}</h2>
+                <h2 className='name'>{this.props.currentThing.name}</h2>
                 <div className='imageBlock'>
                     <img src={this.props.currentThing.url} alt={this.props.currentThing.name} className='image'></img>
                 </div>
@@ -26,7 +26,7 @@ class Result extends React.Component {
         } else {
             return (
             <div className='resultContainer'>
-                <h1> PUSH BUTTON "RANDOM" </h1>
+                <h2> PUSH BUTTON "RANDOM" </h2>
             </div>)
         }
     }

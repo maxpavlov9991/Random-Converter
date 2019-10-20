@@ -51,7 +51,7 @@ class Converter extends React.Component {
 }
 
 const CURRENCIES = [
-    //coefficient: 1 RUB = coefficient currence
+    //coefficient: currency in RUB =
     {name: '₽ RUB', сoefficient: 1},
     {name: '$ USD', сoefficient: 63.86},
     {name: '€ EUR', сoefficient: 71.22},
@@ -63,7 +63,7 @@ const THINGS = [
     {id: 1, name: 'Oranges', coefficient: 10.88, imgName: '1.jpg', url: 'https://soappotions.com/wp-content/uploads/2017/10/orange.jpg'},
     {id: 2, name: 'Watermelons', coefficient: 250.00, imgName: '2.jpg', url: 'https://n1s1.hsmedia.ru/d5/ce/d0/d5ced00723c28f9070fecd1d78c080db/665x495_1_b51090c822930d40505385a6798f7a84@1000x745_0xac120003_2747968621562649731.jpg'},
     {id: 3, name: 'Pears', coefficient: 21.42, imgName: '3.jpeg', url: 'https://img2.zakaz.ua/upload.version_1.0.87a1c02cc6f50b9ca8ac9789159e9953.1350x1350.jpeg'},
-    {id: 4, name: 'Large', coefficient: 500000000, imgName: '4.jpeg', url: 'http://i.artfile.ru/4000x2748_913368_[www.ArtFile.ru].jpg'}
+    {id: 4, name: 'City', coefficient: 500000000, imgName: '4.jpeg', url: 'http://i.artfile.ru/4000x2748_913368_[www.ArtFile.ru].jpg'}
 ]
 
 function getCurrentCurrency(currencies, id){
