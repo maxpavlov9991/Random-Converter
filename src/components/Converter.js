@@ -7,7 +7,12 @@ import Resault from './Resault'
 class Converter extends React.Component {
     constructor(props){
         super(props)
-        this.state = {}
+        this.state = {currencies: CURRENCIES, currentCurrency: getCurrentCurrency(CURRENCIES, 0)}
+    }
+
+    updateCurrentCurrency = (id) => {
+        console.log(id)
+        this.setState({currentCurrency: getCurrentCurrency(CURRENCIES, id)})
     }
 
     render() {
@@ -22,16 +27,28 @@ class Converter extends React.Component {
                     id est laborum.</span>
                 </div>
 
-                <InputForm />
+                <InputForm currencies={this.state.currencies} currentCurrency={this.state.currentCurrency} updateCurrentCurrency={this.updateCurrentCurrency} />
 
-                <NeonButton />
+                <NeonButton currentCurrency={this.state.currentCurrency}/>
 
-                <Resault />
+                <Resault currentCurrency={this.state.currentCurrency}/>
 
             </div>
 
         )
     }
+}
+
+const CURRENCIES = [
+    //coefficient: 1 RUB = coefficient currence
+    {name: 'RUB', сoefficient: 1},
+    {name: 'USD', сoefficient: 0.016},
+    {name: 'EUR', сoefficient: 0.014},
+    {name: 'CNY', сoefficient: 0.111},
+]
+
+function getCurrentCurrency(currencies, id){
+    return currencies[id]
 }
 
 export default Converter

@@ -13,7 +13,6 @@ class Resault extends React.Component {
                 <div className='resaultContainer'>
 
                 <p>asdasd</p>
-
                 <p>asdasd</p>
                 <p>asdasd</p>
                 <p>asdasd</p>
